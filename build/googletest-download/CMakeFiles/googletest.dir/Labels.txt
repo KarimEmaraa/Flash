@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/hp/FlashMem/build/googletest-download/CMakeFiles/googletest
+/home/hp/FlashMem/build/googletest-download/CMakeFiles/googletest.rule
+/home/hp/FlashMem/build/googletest-download/CMakeFiles/googletest-complete.rule
+/home/hp/FlashMem/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install.rule
+/home/hp/FlashMem/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule
+/home/hp/FlashMem/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download.rule
+/home/hp/FlashMem/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-update.rule
+/home/hp/FlashMem/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch.rule
+/home/hp/FlashMem/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure.rule
+/home/hp/FlashMem/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build.rule
+/home/hp/FlashMem/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test.rule

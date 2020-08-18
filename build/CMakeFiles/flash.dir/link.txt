@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/flash.dir/src/flash.c.o CMakeFiles/flash.dir/src/main.c.o  -o flash 
