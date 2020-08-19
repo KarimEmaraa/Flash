@@ -5,8 +5,6 @@ extern "C" {
 #include "stub.h"
 
 extern uint8_t test_data[256];
-extern uint32_t test_datalength;
-extern uint32_t test_idx;
 }
 
 

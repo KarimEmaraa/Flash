@@ -1,7 +1,6 @@
 #include "stub.h"
 
 uint8_t test_data[256];
-uint32_t test_datalength;
 
 uint32_t test_idx = 0;
 
