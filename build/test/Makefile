@@ -245,6 +245,39 @@ __/src/flash.c.s:
 	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test3_tests.dir/build.make test/CMakeFiles/test3_tests.dir/__/src/flash.c.s
 .PHONY : __/src/flash.c.s
 
+__/src/stub.o: __/src/stub.c.o
+
+.PHONY : __/src/stub.o
+
+# target to build an object file
+__/src/stub.c.o:
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test2_tests.dir/build.make test/CMakeFiles/test2_tests.dir/__/src/stub.c.o
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test_tests.dir/build.make test/CMakeFiles/test_tests.dir/__/src/stub.c.o
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test3_tests.dir/build.make test/CMakeFiles/test3_tests.dir/__/src/stub.c.o
+.PHONY : __/src/stub.c.o
+
+__/src/stub.i: __/src/stub.c.i
+
+.PHONY : __/src/stub.i
+
+# target to preprocess a source file
+__/src/stub.c.i:
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test2_tests.dir/build.make test/CMakeFiles/test2_tests.dir/__/src/stub.c.i
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test_tests.dir/build.make test/CMakeFiles/test_tests.dir/__/src/stub.c.i
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test3_tests.dir/build.make test/CMakeFiles/test3_tests.dir/__/src/stub.c.i
+.PHONY : __/src/stub.c.i
+
+__/src/stub.s: __/src/stub.c.s
+
+.PHONY : __/src/stub.s
+
+# target to generate assembly for a file
+__/src/stub.c.s:
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test2_tests.dir/build.make test/CMakeFiles/test2_tests.dir/__/src/stub.c.s
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test_tests.dir/build.make test/CMakeFiles/test_tests.dir/__/src/stub.c.s
+	cd /home/hp/FlashMem/build && $(MAKE) -f test/CMakeFiles/test3_tests.dir/build.make test/CMakeFiles/test3_tests.dir/__/src/stub.c.s
+.PHONY : __/src/stub.c.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -378,6 +411,9 @@ help:
 	@echo "... __/src/flash.o"
 	@echo "... __/src/flash.i"
 	@echo "... __/src/flash.s"
+	@echo "... __/src/stub.o"
+	@echo "... __/src/stub.i"
+	@echo "... __/src/stub.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

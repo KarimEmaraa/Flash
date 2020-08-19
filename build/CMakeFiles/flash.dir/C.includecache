@@ -9,6 +9,12 @@
 ../inc/flash.h
 stdint.h
 -
+stub.h
+../inc/stub.h
+
+../inc/stub.h
+stdint.h
+../inc/stdint.h
 
 /home/hp/FlashMem/src/flash.c
 flash.h
@@ -21,4 +27,10 @@ stdlib.h
 -
 flash.h
 /home/hp/FlashMem/src/flash.h
+stub.h
+/home/hp/FlashMem/src/stub.h
+
+/home/hp/FlashMem/src/stub.c
+stub.h
+/home/hp/FlashMem/src/stub.h
 

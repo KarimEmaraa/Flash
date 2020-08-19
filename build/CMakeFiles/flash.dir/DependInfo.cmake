@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/hp/FlashMem/src/flash.c" "/home/hp/FlashMem/build/CMakeFiles/flash.dir/src/flash.c.o"
   "/home/hp/FlashMem/src/main.c" "/home/hp/FlashMem/build/CMakeFiles/flash.dir/src/main.c.o"
+  "/home/hp/FlashMem/src/stub.c" "/home/hp/FlashMem/build/CMakeFiles/flash.dir/src/stub.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

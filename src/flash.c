@@ -1,34 +1,9 @@
 #include "flash.h"
 
-/* SPI INTERFACE STUB */
-
-void writeOnSPI(uint8_t *data, uint32_t dataLength);
-void readFromSPI(uint8_t *data, uint32_t dataLength);
-
-void writeOnSPI(uint8_t *data, uint32_t dataLength)
-{
-	return;
-}
-
-void readFromSPI(uint8_t *data, uint32_t dataLength)
-{
-	//skip single byte reading for testing purpose
-	if(dataLength == 1)
-		return;
-	for(uint32_t i = 0; i < dataLength; i++)
-	{
-		//write dummy data
-		data[i] = 0xff;
-	}
-}
-
-/* END OF SPI INTERFACE STUB */
-
 //Internal Buffer
 static uint8_t buf[SECTOR_SIZE];
 //Current flash status. Assuming ready on power on.
 static FlashStatusEnum _status = READY;
-
 
 
 uint8_t * getBuffer()
@@ -51,11 +26,11 @@ void writeFromBuffer(uint32_t address)
 			//set flash status to write in progress.
 			_status = WRITE_STATUS_IN_PROGRESS;
 			//Send write enable instruction
-			uint8_t write_en = WRITE_ENABLE;
-			writeOnSPI(&write_en, 1);
+			 uint8_t write_en = WRITE_ENABLE;
+			writeOnSPI((uint8_t *)write_en, 1);
 			//send write page instruction
 			uint8_t write_pg = WRITE_PAGE;
-			writeOnSPI(&write_pg, 1);
+			writeOnSPI((uint8_t *)write_pg, 1);
 			//send the entire buffer.  4096/256 = 16
 			for(uint8_t i = 0, cur_index = 0; i < 16; i++, cur_index += 256)
 			{
@@ -89,11 +64,11 @@ void loadInBuffer(uint32_t address)
 				//set flash status to write in progress.
 				_status = READ_IN_PROGESS;
 				//Send write enable instruction
-				uint8_t write_en = WRITE_ENABLE;
-				writeOnSPI(&write_en, 1);
+				uint8_t write_en = WRITE_ENABLE;	
+				writeOnSPI((uint8_t *)write_en, 1);
 				//send read sector instruction
 				uint8_t read_sc = READ_SECTOR;
-				writeOnSPI(&read_sc, 1);
+				writeOnSPI((uint8_t *)read_sc, 1);
 				//send address
 				writeOnSPI((uint8_t *)address, 3);
 				//read sector
@@ -114,7 +89,7 @@ FlashStatusEnum getStatus()
 	uint8_t status = 0;
 	uint8_t readStatusInst = READ_STATUS_REG_1;
 	//write (status register 1) instruction
-	writeOnSPI(&readStatusInst, 1);
+	writeOnSPI((uint8_t*)readStatusInst, 1);
 	//get status register 1
 	readFromSPI(&status, 1);
 	//if WIP == 1

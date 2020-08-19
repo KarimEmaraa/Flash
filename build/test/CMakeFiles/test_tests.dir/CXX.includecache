@@ -9,6 +9,12 @@
 ../inc/flash.h
 stdint.h
 -
+stub.h
+../inc/stub.h
+
+../inc/stub.h
+stdint.h
+../inc/stdint.h
 
 /home/hp/FlashMem/test/main.cpp
 gtest/gtest.h
@@ -19,6 +25,8 @@ gtest/gtest.h
 /home/hp/FlashMem/test/gtest/gtest.h
 flash.h
 /home/hp/FlashMem/test/flash.h
+stub.h
+/home/hp/FlashMem/test/stub.h
 
 googletest-src/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

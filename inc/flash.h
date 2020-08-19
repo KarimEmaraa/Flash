@@ -2,6 +2,7 @@
 #define FLASH_H
 
 #include <stdint.h>
+#include "stub.h"
 
 #define SECTOR_SIZE 			4096U
 //Read Status Register-1

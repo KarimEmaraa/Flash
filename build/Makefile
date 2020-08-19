@@ -325,6 +325,33 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/flash.dir/build.make CMakeFiles/flash.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/stub.o: src/stub.c.o
+
+.PHONY : src/stub.o
+
+# target to build an object file
+src/stub.c.o:
+	$(MAKE) -f CMakeFiles/flash.dir/build.make CMakeFiles/flash.dir/src/stub.c.o
+.PHONY : src/stub.c.o
+
+src/stub.i: src/stub.c.i
+
+.PHONY : src/stub.i
+
+# target to preprocess a source file
+src/stub.c.i:
+	$(MAKE) -f CMakeFiles/flash.dir/build.make CMakeFiles/flash.dir/src/stub.c.i
+.PHONY : src/stub.c.i
+
+src/stub.s: src/stub.c.s
+
+.PHONY : src/stub.s
+
+# target to generate assembly for a file
+src/stub.c.s:
+	$(MAKE) -f CMakeFiles/flash.dir/build.make CMakeFiles/flash.dir/src/stub.c.s
+.PHONY : src/stub.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -352,6 +379,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/stub.o"
+	@echo "... src/stub.i"
+	@echo "... src/stub.s"
 .PHONY : help
 
 

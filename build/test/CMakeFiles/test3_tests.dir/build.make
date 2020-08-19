@@ -81,9 +81,33 @@ test/CMakeFiles/test3_tests.dir/__/src/flash.c.o.provides: test/CMakeFiles/test3
 test/CMakeFiles/test3_tests.dir/__/src/flash.c.o.provides.build: test/CMakeFiles/test3_tests.dir/__/src/flash.c.o
 
 
+test/CMakeFiles/test3_tests.dir/__/src/stub.c.o: test/CMakeFiles/test3_tests.dir/flags.make
+test/CMakeFiles/test3_tests.dir/__/src/stub.c.o: ../src/stub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/FlashMem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object test/CMakeFiles/test3_tests.dir/__/src/stub.c.o"
+	cd /home/hp/FlashMem/build/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test3_tests.dir/__/src/stub.c.o   -c /home/hp/FlashMem/src/stub.c
+
+test/CMakeFiles/test3_tests.dir/__/src/stub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test3_tests.dir/__/src/stub.c.i"
+	cd /home/hp/FlashMem/build/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hp/FlashMem/src/stub.c > CMakeFiles/test3_tests.dir/__/src/stub.c.i
+
+test/CMakeFiles/test3_tests.dir/__/src/stub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test3_tests.dir/__/src/stub.c.s"
+	cd /home/hp/FlashMem/build/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hp/FlashMem/src/stub.c -o CMakeFiles/test3_tests.dir/__/src/stub.c.s
+
+test/CMakeFiles/test3_tests.dir/__/src/stub.c.o.requires:
+
+.PHONY : test/CMakeFiles/test3_tests.dir/__/src/stub.c.o.requires
+
+test/CMakeFiles/test3_tests.dir/__/src/stub.c.o.provides: test/CMakeFiles/test3_tests.dir/__/src/stub.c.o.requires
+	$(MAKE) -f test/CMakeFiles/test3_tests.dir/build.make test/CMakeFiles/test3_tests.dir/__/src/stub.c.o.provides.build
+.PHONY : test/CMakeFiles/test3_tests.dir/__/src/stub.c.o.provides
+
+test/CMakeFiles/test3_tests.dir/__/src/stub.c.o.provides.build: test/CMakeFiles/test3_tests.dir/__/src/stub.c.o
+
+
 test/CMakeFiles/test3_tests.dir/test3.cpp.o: test/CMakeFiles/test3_tests.dir/flags.make
 test/CMakeFiles/test3_tests.dir/test3.cpp.o: ../test/test3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/FlashMem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test3_tests.dir/test3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/FlashMem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test3_tests.dir/test3.cpp.o"
 	cd /home/hp/FlashMem/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test3_tests.dir/test3.cpp.o -c /home/hp/FlashMem/test/test3.cpp
 
 test/CMakeFiles/test3_tests.dir/test3.cpp.i: cmake_force
@@ -107,7 +131,7 @@ test/CMakeFiles/test3_tests.dir/test3.cpp.o.provides.build: test/CMakeFiles/test
 
 test/CMakeFiles/test3_tests.dir/main.cpp.o: test/CMakeFiles/test3_tests.dir/flags.make
 test/CMakeFiles/test3_tests.dir/main.cpp.o: ../test/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/FlashMem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test3_tests.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/FlashMem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/test3_tests.dir/main.cpp.o"
 	cd /home/hp/FlashMem/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test3_tests.dir/main.cpp.o -c /home/hp/FlashMem/test/main.cpp
 
 test/CMakeFiles/test3_tests.dir/main.cpp.i: cmake_force
@@ -132,6 +156,7 @@ test/CMakeFiles/test3_tests.dir/main.cpp.o.provides.build: test/CMakeFiles/test3
 # Object files for target test3_tests
 test3_tests_OBJECTS = \
 "CMakeFiles/test3_tests.dir/__/src/flash.c.o" \
+"CMakeFiles/test3_tests.dir/__/src/stub.c.o" \
 "CMakeFiles/test3_tests.dir/test3.cpp.o" \
 "CMakeFiles/test3_tests.dir/main.cpp.o"
 
@@ -139,13 +164,14 @@ test3_tests_OBJECTS = \
 test3_tests_EXTERNAL_OBJECTS =
 
 test/test3_tests: test/CMakeFiles/test3_tests.dir/__/src/flash.c.o
+test/test3_tests: test/CMakeFiles/test3_tests.dir/__/src/stub.c.o
 test/test3_tests: test/CMakeFiles/test3_tests.dir/test3.cpp.o
 test/test3_tests: test/CMakeFiles/test3_tests.dir/main.cpp.o
 test/test3_tests: test/CMakeFiles/test3_tests.dir/build.make
 test/test3_tests: googletest-build/googlemock/gtest/libgtest_main.a
 test/test3_tests: googletest-build/googlemock/gtest/libgtest.a
 test/test3_tests: test/CMakeFiles/test3_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hp/FlashMem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test3_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hp/FlashMem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test3_tests"
 	cd /home/hp/FlashMem/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test3_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +180,7 @@ test/CMakeFiles/test3_tests.dir/build: test/test3_tests
 .PHONY : test/CMakeFiles/test3_tests.dir/build
 
 test/CMakeFiles/test3_tests.dir/requires: test/CMakeFiles/test3_tests.dir/__/src/flash.c.o.requires
+test/CMakeFiles/test3_tests.dir/requires: test/CMakeFiles/test3_tests.dir/__/src/stub.c.o.requires
 test/CMakeFiles/test3_tests.dir/requires: test/CMakeFiles/test3_tests.dir/test3.cpp.o.requires
 test/CMakeFiles/test3_tests.dir/requires: test/CMakeFiles/test3_tests.dir/main.cpp.o.requires
 

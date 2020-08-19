@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/flash.dir/src/flash.c.o"
   "CMakeFiles/flash.dir/src/main.c.o"
+  "CMakeFiles/flash.dir/src/stub.c.o"
   "flash.pdb"
   "flash"
 )

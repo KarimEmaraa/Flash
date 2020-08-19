@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/hp/FlashMem/src/flash.c" "/home/hp/FlashMem/build/test/CMakeFiles/test3_tests.dir/__/src/flash.c.o"
+  "/home/hp/FlashMem/src/stub.c" "/home/hp/FlashMem/build/test/CMakeFiles/test3_tests.dir/__/src/stub.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
